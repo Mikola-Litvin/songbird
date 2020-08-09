@@ -4,7 +4,14 @@ import Question from '../question/Question';
 
 class Questions extends React.Component {
   render() {
-    let questions = ['Разминка', 'Воробьиные', 'Лесные птицы', 'Певчие птицы', 'Хищные птицы', 'Морские птицы'];
+    let questions = [
+      'Разминка',
+      'Первый тур',
+      'Второй тур',
+      'Третий тур',
+      'Четвертый тур',
+      'Пятый тур'
+    ];
     return (
       <ul className="questions">
         {questions.map((item, index) => {
