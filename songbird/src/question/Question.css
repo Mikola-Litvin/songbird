@@ -1,0 +1,111 @@
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.question:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.question:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.active-question {
+  background-color: #00bc8c;
+}
+
+@media (max-width: 1082px) {
+  .question {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 962px) {
+  .question {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 842px) {
+  .question {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 722px) {
+  .question {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 662px) {
+  .question {
+    width: 190px;
+    padding: 15px 40px;
+  }
+
+  .question:first-child {
+    border-radius: 0;
+  }
+  
+  .question:last-child {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 573px) {
+  .question {
+    width: 185px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 554px) {
+  .question {
+    width: 265px;
+  }
+}
+
+@media (max-width: 529px) {
+  .question {
+    width: 257px;
+  }
+}
+
+@media (max-width: 513px) {
+  .question {
+    width: 240px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .question {
+    width: 226px;
+  }
+}
+
+@media (max-width: 453px) {
+  .question {
+    width: 197px;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 393px) {
+  .question {
+    width: 182px;
+    padding: 15px 5px;
+  }
+}
+
+@media (max-width: 364px) {
+  .question {
+    width: 160px;
+  }
+}

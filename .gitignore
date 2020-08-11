@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+songbird/node_modules
+songbird/.pnp
+songbird/.pnp.js
+
+# testing
+songbird/coverage
+
+# production
+songbird/build
+
+# misc
+songbird/.DS_Store
+songbird/.env.local
+songbird/.env.development.local
+songbird/.env.test.local
+songbird/.env.production.local
+
+songbird/npm-debug.log*
+songbird/yarn-debug.log*
+songbird/yarn-error.log*
+
+songbird/surge
+songbird/surge.cmd
+songbird/surge.ps1

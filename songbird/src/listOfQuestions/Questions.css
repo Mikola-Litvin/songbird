@@ -1,0 +1,17 @@
+.questions {
+  display: flex;
+  justify-content: space-between;
+  min-height: 34px;
+  padding: 0;
+  margin: 0;
+  background-color: #008966;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+@media (max-width: 662px) {
+  .questions {
+    flex-wrap: wrap;
+    border-radius: 0;
+  }
+}
