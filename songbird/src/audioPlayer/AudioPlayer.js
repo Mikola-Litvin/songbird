@@ -8,6 +8,7 @@ class AudioPlayerWrapper extends React.Component {
     return (
       <AudioPlayer
         src={this.props.src}
+        onAbort={e => e.target.play().then(() => {e.target.pause()})}
         showJumpControls={false}
         showDownloadProgress={false}
         customProgressBarSection={

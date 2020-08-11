@@ -1,4 +1,5 @@
 import React from 'react';
+import Salut from './orig.gif';
 import './FinishedGameScreen.css';
 
 class FinishedGameScreen extends React.Component {
@@ -14,7 +15,7 @@ class FinishedGameScreen extends React.Component {
     if (this.props.score < (this.props.birdsdata.length * 5)) {
       return (
       <div className="finished-game">
-        <p></p>
+        <h2>Не плохо!</h2>
         <p>Вы набрали {this.props.score} баллов из {this.props.birdsdata.length * 5} возможных.</p>
         <div className="play-again-button" onClick={this.startNewGame}>Попробовать ещё раз!</div>
       </div>
@@ -22,8 +23,9 @@ class FinishedGameScreen extends React.Component {
     } else {
       return (
         <div className="finished-game">
-          <p>Вы набрали {this.props.score} баллов из {this.props.birdsdata.length * 5} возможных.</p>
           <h2>Поздравляем!</h2>
+          <p>Вы набрали {this.props.score} баллов из {this.props.birdsdata.length * 5} возможных.</p>
+          <img src={Salut} alt="" />
           <p>Игра окончина.</p>
         </div>
       );
