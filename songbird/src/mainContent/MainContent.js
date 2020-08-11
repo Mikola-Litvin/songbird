@@ -17,15 +17,19 @@ class MainContent extends React.Component {
     this.setAnswerStatusDefault = this.setAnswerStatusDefault.bind(this);
     this.selectBird = this.selectBird.bind(this);
   }
+
   changeAnswerStatus() {
     this.setState({answerstatus: 'correct'});
   }
+
   setAnswerStatusDefault() {
     this.setState({answerstatus: null});
   }
+
   selectBird(id) {
     this.setState({selectedbird: id});
   }
+  
   render() {
     if (this.props.questionnumber < this.props.birdsdata.length) {
       return (

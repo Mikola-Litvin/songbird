@@ -5,6 +5,8 @@ import Answer from '../answer/Answer';
 class BlockOfAnswers extends React.Component {
   render() {
     let answers = this.props.birdsdata[this.props.questionnumber];
+    console.clear();
+    console.log('Correct answer', this.props.currectAnswer + 1);
     return (
       <ul className="block-of-answers">
         {answers.map((item) => {

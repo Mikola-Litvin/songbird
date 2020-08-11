@@ -9,6 +9,7 @@ class Answer extends React.Component {
       questionnumber: 0,
     };
   }
+
   static getDerivedStateFromProps(props, state) {
     if (props.questionnumber !== state.questionnumber) {
       return {
@@ -18,6 +19,7 @@ class Answer extends React.Component {
     }
     return null;
   }
+
   toAnswer = () => {
     this.props.selectBird(this.props.answer.id);
     if (this.props.answerstatus !== 'correct') {
@@ -32,6 +34,7 @@ class Answer extends React.Component {
     }
     return;
   }
+
   render() {
     return (
       <li className={this.state.status} onClick={this.toAnswer}>{this.props.answer.name}</li>

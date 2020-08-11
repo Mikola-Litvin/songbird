@@ -20,6 +20,7 @@ class App extends React.Component {
     this.setCorrectAnswer = this.setCorrectAnswer.bind(this);
     this.changeQuestionNumber = this.changeQuestionNumber.bind(this);
   }
+
   changeQuestionNumber() {
     if (this.state.questionnumber < Birds.length) {
       this.setState({questionnumber: this.state.questionnumber + 1});
@@ -27,25 +28,31 @@ class App extends React.Component {
       this.setState({questionnumber: 0});
     }
   }
+  
   changeScore() {
     const newValue = this.state.score + this.state.points;
     this.setState({score: newValue});
   }
+
   changePoints() {
     let newValue = this.state.points - 1;
     if (newValue < 0) newValue = 0;
     this.setState({points: newValue});
   }
+
   setPointsDefault() {
     this.setState({points: 5});
   }
+
   setScoreDefault() {
     this.setState({score: 0});
   }
+
   setCorrectAnswer() {
     let randomNumber = Math.abs(Math.round(0 - 0.5 + Math.random() * (5 - 0 + 1)));
     this.setState({correctanswer: randomNumber});
   }
+
   render() {
     return (
       <div className="App">

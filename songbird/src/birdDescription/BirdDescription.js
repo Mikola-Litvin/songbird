@@ -2,7 +2,7 @@ import React from 'react';
 import './BirdDescription.css';
 import BirdsImage from '../birdsImage/BirdsImage';
 import BirdName from '../birdName/BirdName';
-import AudioPlayer from '../audioPlayer/AudioPlayer';
+import AudioPlayerWrapper from '../audioPlayer/AudioPlayer';
 
 class BirdDescription extends React.Component {
   render() {
@@ -24,7 +24,7 @@ class BirdDescription extends React.Component {
                 answerstatus='correct'
               />
               <p>{this.props.birdsdata[this.props.selectedBird - 1].species}</p>
-              <AudioPlayer src={this.props.birdsdata[this.props.selectedBird - 1].audio} />
+              <AudioPlayerWrapper src={this.props.birdsdata[this.props.selectedBird - 1].audio} />
             </div>
           </div>
           <p>{this.props.birdsdata[this.props.selectedBird - 1].description}</p>

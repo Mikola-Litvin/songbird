@@ -45,6 +45,7 @@
 
 @media (max-width: 662px) {
   .question {
+    width: 190px;
     padding: 15px 40px;
   }
 
@@ -59,24 +60,46 @@
 
 @media (max-width: 573px) {
   .question {
+    width: 185px;
     padding: 15px 30px;
+  }
+}
+
+@media (max-width: 554px) {
+  .question {
+    width: 265px;
+  }
+}
+
+@media (max-width: 529px) {
+  .question {
+    width: 257px;
   }
 }
 
 @media (max-width: 513px) {
   .question {
+    width: 240px;
     padding: 15px 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .question {
+    width: 226px;
   }
 }
 
 @media (max-width: 453px) {
   .question {
+    width: 197px;
     padding: 15px 10px;
   }
 }
 
 @media (max-width: 393px) {
   .question {
+    width: 182px;
     padding: 15px 5px;
   }
 }

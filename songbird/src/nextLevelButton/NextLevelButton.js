@@ -9,6 +9,7 @@ class NextLevelButton extends React.Component {
     this.props.setCorrectAnswer();
     this.props.selectBird(null);
   }
+  
   render() {
     if (this.props.answerstatus === 'correct') {
       return (

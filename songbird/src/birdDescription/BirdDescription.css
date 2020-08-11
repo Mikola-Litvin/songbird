@@ -18,12 +18,12 @@
   margin-bottom: 20px;
 }
 
-.bird-description-top-section div {
+.bird-description-top-section > div {
   flex-grow: 1;
   padding-left: 20px;
 }
 
-.bird-description-top-section div p {
+.bird-description-top-section > div p {
   padding: 5px;
   border-bottom: 1px solid #444444;
 }
